@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap'); 
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#app {
+    height: 70vh;
+    width: 50%;
+    background-color: rgb(15, 15, 15);
+    border-radius: 30px;
+    top: 15%;
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 2em;
+}
+
+#currentWeather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+}
+
+#temperature {
+    font-size: 3em;
+}
+
+#app > img {
+    height: auto;
+    width: auto;
+}
+
+#citySearch {
+    border-radius: 30px;
+    border-style: none;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    height: 2vh;
+    width: 40%;
+    margin-bottom: 5vh;
+    font-size: 2em;
+    padding: 20px;
+}
+
+#citySearch:focus {
+    outline: none;
+}
