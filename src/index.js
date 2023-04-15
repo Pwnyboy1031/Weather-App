@@ -3,7 +3,7 @@ import { updateCurrent, updateForecast } from "./ui";
 
 async function getWeather(searchedCity) {
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=32f6de3ab826413d9e4145439231304&q=${searchedCity}`, {mode: 'cors'});
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=32f6de3ab826413d9e4145439231304&q=${searchedCity}`, {mode: 'cors'});
         const data = await response.json();
         const city = data.location.name;
         const tempF = data.current.temp_f + "°";
@@ -19,7 +19,7 @@ async function getWeather(searchedCity) {
 
 async function getForecast(searchedCity) {
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=32f6de3ab826413d9e4145439231304&q=${searchedCity}&days=3&aqi=noalerts=no`, {mode: 'cors'});
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=32f6de3ab826413d9e4145439231304&q=${searchedCity}&days=3&aqi=noalerts=no`, {mode: 'cors'});
         const data = await response.json();
         const forecast = data.forecast;
         const currentTime = data.current.last_updated;
