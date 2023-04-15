@@ -37,7 +37,7 @@ function updateForecast(forecast, currentTime) {
         hourlyContainer.appendChild(conditionLogo);
 
         //condition
-        condition = document.createElement("center");
+        condition = document.createElement("div");
         condition.innerHTML = forecast.forecastday[day].hour[i].condition.text;
         hourlyContainer.appendChild(condition);
 
